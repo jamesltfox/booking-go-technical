@@ -1,0 +1,14 @@
+.dest-search {
+  background: color();
+  padding: spacing();
+
+  &__title {
+    margin-bottom: spacing(1);
+    margin-top: 0;
+  }
+
+  label {
+    color: color("label");
+    display: block;
+  }
+}

@@ -1,0 +1,9 @@
+$themeColors: (
+  "primary": #f3ce56,
+  "text": #333,
+  "label": #444
+);
+
+@function color($key: "primary") {
+  @return map-get($themeColors, $key);
+} 

@@ -1,0 +1,13 @@
+
+@use "sass:map";
+@import 'node_modules/normalize-scss/sass/normalize';
+@include normalize();
+
+// General 
+@import './general/setup';
+@import './general/colors';
+@import './general/typography';
+@import './general/spacing';
+
+// Components
+@import './components/search';
