@@ -1,14 +1,55 @@
 .dest-search {
   background: color();
+  max-width: 28.75rem;
   padding: spacing();
-
-  &__title {
-    margin-bottom: spacing(1);
-    margin-top: 0;
-  }
 
   label {
     color: color("label");
     display: block;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    @extend %OpenSans;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==");
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    background-size: 1rem 1.125rem;
+    cursor: auto;
+    border: 1px solid color("border");
+    border-radius: 0.3125rem;
+    padding: 0 0.875rem;
+    height: 3rem;
+    width: 100%;
+
+    &::placeholder {
+      color: color("placeholder");
+      font-size: 0.875rem;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: spacing(1);
+    margin-top: 0;
+  }
+
+  .form-field {
+    position: relative;
+  }
+
+  .hint-text {
+    bottom: 1rem;
+    color: color("placeholder");
+    font-size: 0.875rem;
+    left: 0.875rem;
+    margin: auto;
+    position: absolute;
+    right: 0;
+
+    &:focus {
+      display: none;
+    }
   }
 }

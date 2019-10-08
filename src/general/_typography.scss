@@ -1,9 +1,21 @@
+// Fonts
+
+%Ubuntu {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+}
+
+%OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
+  @extend %OpenSans;
   color: color("text");
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-  font-family: 'Ubuntu', 'Open Sans', sans-serif;
+  @extend %Ubuntu;
+  color: color("text");
+  line-height: 2rem;
 }

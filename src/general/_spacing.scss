@@ -5,4 +5,4 @@ $spacing: (
 
 @function spacing($key: 1) {
   @return map-get($spacing, $key);
-} 
+}

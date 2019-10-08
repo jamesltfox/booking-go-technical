@@ -1,0 +1,21 @@
+.btn {
+  @extend %Ubuntu;
+  border: none;
+  border-radius: 0.3125rem;
+  color: $textAlt;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  max-height: 4rem; 
+  padding: 1.2rem 2.5rem;
+
+  &__submit {
+    background-color: color("button");
+    margin-top: spacing(1);
+    width: 100%;
+
+    &:hover {
+      background-color: color("buttonalt");
+    }
+  }
+}

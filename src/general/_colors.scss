@@ -1,9 +1,15 @@
 $themeColors: (
   "primary": #f3ce56,
   "text": #333,
-  "label": #444
+  "label": #444,
+  "border": #c8ae5b,
+  "button": #00874d,
+  "buttonalt": #006e3e,
+  "placeholder": #a4a4a4
 );
+
+$textAlt: #ffffff;
 
 @function color($key: "primary") {
   @return map-get($themeColors, $key);
-} 
+}
