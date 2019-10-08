@@ -5,11 +5,23 @@ $themeColors: (
   "border": #c8ae5b,
   "button": #00874d,
   "buttonalt": #006e3e,
-  "placeholder": #a4a4a4
+  "placeholder": #a4a4a4,
+  "searchBg": #ffffff,
+  "focusBg": #e7f4fe
+);
+
+$placeTypes: (
+  "city": rgb(10, 99, 176),
+  "station": rgb(91, 91, 91),
+  "airport": rgb(150, 20, 18)
 );
 
 $textAlt: #ffffff;
 
 @function color($key: "primary") {
   @return map-get($themeColors, $key);
+}
+
+@function place($key: "city") {
+  @return map-get($placeTypes, $key);
 }

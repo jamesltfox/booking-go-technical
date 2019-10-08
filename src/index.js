@@ -5,7 +5,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Open Sans', 'Ubuntu:400,500', 'sans-serif']
+    families: ['Open Sans: 600', 'Ubuntu:400,500', 'sans-serif']
   }
 });
 
